@@ -13,12 +13,16 @@
 	<a href="./HTMLPage/afficherDemande.php">Liste des demandes</a>
 </div>
 <div class = "formulaireAuthentification">
-	<form method = "post" action = "HTMLPage/authentification.php">
+	<form method = "post" action = "HTMLPage/authentification.php" class = "d-flex flex-column">
+		<div>
 		Pseudo
 		<input type = "text" name = "pseudo" required />
+		</div>
+		<div>
 		Mot de Passe
 		<input type = "password" name = "motDePasse" required />
-		<input type = "submit" value = "valider" />
+		</div>
+		<input type = "submit" value = "valider" class="btn-sm btn-connection"/>
 
 	</form>
 	<a href="index.php"> s'inscrire </a>

@@ -1,0 +1,25 @@
+.validate {
+	background: lightgreen
+}
+
+.table {
+	width : 80;
+}
+
+.celBoutton
+{
+	width : 250px;
+}
+
+.table-affiche{
+	width : 700px;
+	max-width: 700px;
+}
+
+.btn-connection{
+	width : 70px;
+}
+
+table {
+	border : 1px solid black;
+}

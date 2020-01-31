@@ -7,9 +7,10 @@
 	<link rel="stylesheet" href="../style/style.css">
 	<?php include "connectionBDD.php" ?>
 </head>
-<body>
+<body class = "d-flex align-items-center justify-content-center flex-column">
+	<div class = "page d-flex flex-column align-items-center border">
+	<a href="../index.php">retour à l'accueil</a>
 	<?php 
-		echo $_POST["recupId"];
 
 		$sql = "SELECT * FROM candidature WHERE Id = ?";
 		$queryDemandes = $bdd->prepare($sql);
@@ -25,7 +26,7 @@
 	<input type="hidden" name = "Commentaire" value = <?php echo '"'.$listeDemandes['Commentaire'].'"' ?>>
 	<input type="hidden" name = "DateSoumission" value = <?php echo '"'.$listeDemandes['DateSoumission'].'"' ?>>
 
-	<table id = "inscription">
+	<table id = "inscription" class = "table d-flex table-bordered table-hover">
 				<form action = "enregistrerDemandeModif.php" method = "post" enctype = "multipart/form-data">
 					<input type="hidden" name="id" value = <?php echo '"'.$_POST["recupId"].'"' ?>>
 					<tr>

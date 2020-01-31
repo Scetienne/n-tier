@@ -1,4 +1,8 @@
+<link rel="stylesheet" href="../style/bootstrap.css">
+
 <?php
+
+
 
 echo "je vais enregistrer <br/>";
 

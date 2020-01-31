@@ -7,10 +7,10 @@
 		<link rel="stylesheet" href="../style/style.css">
 
 	</head>
-	<body>
-		<div class = "page d-inline-flex flex-column align-items-center">
+	<body class = "d-flex align-items-center justify-content-center">
+		<div class = "page d-flex flex-column align-items-center border">
 			<a href="../index.php">retour à l'accueil</a>
-			<table id = "inscription" class = "table d-flex table-bordered">
+			<table id = "inscription" class = "table d-flex table-bordered table-hover">
 				<form action = "enregistrerDemande.php" method = "post" enctype = "multipart/form-data">
 					<tr>
 						<td>Nom</td>

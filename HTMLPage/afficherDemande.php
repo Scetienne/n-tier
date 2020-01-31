@@ -6,11 +6,12 @@
 	<link rel="stylesheet" href="../style/bootstrap.css">
 	<link rel="stylesheet" href="../style/style.css">
 </head>
-<body>
+<body class ="d-flex align-items-center justify-content-center">
 <div class = "page d-inline-flex flex-column align-items-center">
+	<a href="../index.php">Accueil</a>
 	<a href="./ajouterDemande.php">Ajouter une demande</a>
 
-	<a href="./afficherDemande.php">Liste des demandes</a>
+	
 <div id="actionEffectuee">
 	<br/>
 </div>
@@ -23,7 +24,7 @@
 </form>
 
 
-<div id = "afficherResultats">
+<div id = "afficherResultats" >
 
 
 
