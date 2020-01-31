@@ -1,5 +1,5 @@
 $(function(){
-	$(".contenu").load("ajouterDemande.php #inscription");
+	//$(".contenu").load("ajouterDemande.php #inscription");
 
 
 	console.log($("[name='NomEtudiant']").val());

@@ -36,7 +36,7 @@ function afficherDetail(demande_id){
 	function supprimerDemande(demande_id){
 		var actionSupprimer = "'supprimerDemande(" + demande_id + ")'"
 		$("#actionEffectuee").load('supprimerDemande.php', {id : demande_id});
-		$('.celBoutton').html('<button onclick=' + actionSupprimer + '>supprimer</button>')
+		// $('.celBoutton').html('<button onclick=' + actionSupprimer + '>supprimer</button>')
 		$("#" + demande_id).remove();
 		$("." + demande_id).remove();
 

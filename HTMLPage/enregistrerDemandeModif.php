@@ -1,8 +1,9 @@
-
+<link rel="stylesheet" href="../style/bootstrap.css">
+<link rel="stylesheet" href="../style/style.css">
 
 <?php
 
-echo "je vais enregistrer la modif ";
+echo "je vais enregistrer la modif <br/>";
 
 $toutMarche = true;
 
@@ -11,7 +12,7 @@ if (isset($_FILES['fichierPDF']) AND $_FILES['fichierPDF']['error'] == 0)
 	if ($_FILES['fichierPDF']['size'] > 1000000 OR
 		(pathinfo($_FILES['fichierPDF']['name']))['extension'] != "pdf" ){
 			$toutMarche = false;
-			echo " le pdf n'est pas conforme ";
+			echo " le pdf n'est pas conforme <br/>";
 	}
 }
 
@@ -57,10 +58,10 @@ if ($toutMarche)
 		move_uploaded_file($_FILES['fichierPDF']['tmp_name'], $nouveauChemin);
 
 
-		echo " nouveau pdf enregistré ";
+		echo " nouveau pdf enregistré <br/>";
 	}
 
-	echo " toutes les modifications ont étées effectuées ";
+	echo " toutes les modifications ont étées effectuées <br/>";
 }
 
 	

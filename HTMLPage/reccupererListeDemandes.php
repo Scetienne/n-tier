@@ -20,13 +20,9 @@ else
 	$entrepriseRec = "%%";
 }
 
-echo $entrepriseRec;
-
 $sql = "SELECT * FROM candidature WHERE NomEtudiant LIKE ? AND Entreprise LIKE ?";
 $queryDemandes = $bdd->prepare($sql);
 $queryDemandes->bind_param("ss", $nomRec, $entrepriseRec);
-
-
 
 $queryDemandes->execute();
 $listeDemandes = $queryDemandes->get_result();

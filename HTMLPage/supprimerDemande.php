@@ -24,6 +24,6 @@ $demandeSupression -> execute();
 ?>
 
 <div>
-demande supprimée<br/>
+<font color="red">demande supprimée<br/></font>
 
 </div>
